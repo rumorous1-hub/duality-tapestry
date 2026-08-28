@@ -57,14 +57,14 @@ export default function ShatteredWorlds() {
             motif="The Restless Inferno"
             title="Inferno Tapestry"
             accent="#ff5a5a"
-            body="A restless realm that knew only motion and flame. Then peace forced its way inward — an alien calm that burned hotter than any fire, unraveling the Inferno from within. What was once chaos now festers in forced stillness."
+            body="A restless realm that knows only motion and flame."
           />
           <WorldPanel
             side="celestial"
             motif="The Fallen Celestial"
             title="Celestial Tapestry"
             accent="#a98cff"
-            body="The Celestial realm collapsed into silent ruins. Its threads, once woven in perfect order, hang torn and drifting. The duality that held the universe together is gone — and where the two weaves bleed into each other, nothingness materializes."
+            body="A peaceful realm whose threads are woven in perfect order."
           />
         </div>
 
