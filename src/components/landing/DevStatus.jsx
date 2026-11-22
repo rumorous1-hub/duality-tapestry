@@ -1,9 +1,9 @@
 import React from "react";
 
 const LOCATIONS = [
-  { name: "Hellville", note: "The first torn settlement" },
-  { name: "Vessem's Cave", note: "A demon's crimson refuge" },
-  { name: "Asterion Clan Hideout", note: "Where the threads converge" },
+  { name: "Core Game Systems", note: "Movement, maps, menus, saves" },
+  { name: "The Prince", note: "Sprites and animation" },
+  { name: "Twindragon Forest", note: "The first explorable area" },
 ];
 
 export default function DevStatus() {
@@ -27,8 +27,8 @@ export default function DevStatus() {
 
           <p className="font-body text-base leading-relaxed text-[#F3E8FF]/80 mb-8">
             Act I is currently being woven in <span className="text-[#c864ff] font-mono-ui">GameMaker</span>.
-            The opening arc spans three locations, each a torn fragment of the merged realms where the
-            Prince's journey begins.
+            Right now we're building the first game systems, bringing the Prince to life, and shaping
+            the Twindragon Forest, the first place you'll explore.
           </p>
 
           <div className="space-y-3">
@@ -52,7 +52,7 @@ export default function DevStatus() {
             <div className="h-full w-[18%] bg-gradient-to-r from-[#8b5cf6] to-[#FF00FF] glow-pulse" />
           </div>
           <p className="mt-3 font-mono-ui text-[10px] tracking-[0.3em] text-[#F3E8FF]/40">
-            ACT I PROGRESS · EARLY BUILD
+            NOW BUILDING · ACT I · EARLY BUILD
           </p>
         </div>
       </div>

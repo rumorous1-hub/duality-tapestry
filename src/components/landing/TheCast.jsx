@@ -17,19 +17,11 @@ const CAST = [
     glow: "rgba(74,4,4,.6)",
     tag: "CRIMSON · ASH",
   },
-  {
-    name: "Miss Leyouda",
-    role: "Angel",
-    desc: "A striking presence wreathed in golden light. Miss Leyouda descended from the ruins of the Celestial — the only angel who chose to fall toward the torn loom.",
-    accent: "#ffd24d",
-    glow: "rgba(217,178,90,.5)",
-    tag: "GOLD · HALO",
-  },
 ];
 
 function CharacterCard({ c }) {
   return (
-    <div className="stitch-frame group relative w-full max-w-[40vw] min-w-[280px] flex-1 bg-[#0d0418]/70 backdrop-blur-sm">
+    <div className="stitch-frame group relative w-full min-w-[280px] flex-1 bg-[#0d0418]/70 backdrop-blur-sm">
       <div
         className="relative h-[460px] overflow-hidden flex items-center justify-center"
         style={{ background: `radial-gradient(circle at 50% 40%, ${c.glow}, #0d0418 75%)` }}
@@ -38,7 +30,7 @@ function CharacterCard({ c }) {
           className="font-serif-display text-7xl italic opacity-90 text-glow-soft select-none"
           style={{ color: c.accent }}
         >
-          {c.name.charAt(0)}
+          {c.name.replace(/^The /, "").charAt(0)}
         </span>
         <div className="absolute top-4 left-4 font-mono-ui text-[10px] tracking-[0.3em] text-[#F3E8FF]/70">
           {c.tag}
@@ -64,6 +56,9 @@ export default function TheCast() {
         <div className="text-center mb-16">
           <p className="font-mono-ui text-[10px] tracking-[0.5em] uppercase text-[#c864ff] mb-4">— Dramatis Personae —</p>
           <h2 className="font-serif-display text-5xl md:text-6xl font-light italic text-glow-soft">The Cast</h2>
+          <p className="mt-4 font-mono-ui text-xs tracking-[0.2em] text-[#F3E8FF]/50 uppercase">
+            Two protagonists · Act I
+          </p>
         </div>
         <div className="flex flex-col md:flex-row gap-6 items-stretch">
           {CAST.map((c) => (
